@@ -1,25 +1,28 @@
-const add = function() {
-	
+const add = (x, y) => x + y;
+
+const subtract = (x, y) => x - y;
+
+const sum = (oprands) => {
+  let sumTotal = 0;
+  oprands.forEach((operand) => (sumTotal += operand));
+  return sumTotal;
 };
 
-const subtract = function() {
-	
+const multiply = (oprands) => {
+  let mulTotal = 1;
+  oprands.forEach((operand) => (mulTotal *= operand));
+  return mulTotal;
 };
 
-const sum = function() {
-	
-};
+const power = (base, exponent) => base ** exponent;
 
-const multiply = function() {
+const factorial = (num) => {
+  let fct = 1;
+  
+  for (let i = 1; i <= num; i++)
+    fct *= i;
 
-};
-
-const power = function() {
-	
-};
-
-const factorial = function() {
-	
+  return fct;
 };
 
 // Do not edit below this line
@@ -29,5 +32,5 @@ module.exports = {
   sum,
   multiply,
   power,
-  factorial
+  factorial,
 };
