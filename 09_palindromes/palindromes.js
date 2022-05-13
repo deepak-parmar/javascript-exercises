@@ -1,7 +1,7 @@
 const palindromes = function (words) {
-  let wordRegex = /[^\W\_\,\.\(\:\)\-\|\\\/ ]/gi
-  let wordClean = words.match(wordRegex).join('').toLowerCase()
-  let wordReverse = wordClean.split('').reverse().join('')
+  const wordRegex = /[^\W!\_\,\.\(\:\)\-\|\\\/ ]/gi
+  const wordClean = words.match(wordRegex).join('').toLowerCase()
+  const wordReverse = wordClean.split('').reverse().join('')
   return wordClean === wordReverse
 };
 
