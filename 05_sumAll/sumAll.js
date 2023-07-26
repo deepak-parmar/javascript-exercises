@@ -12,8 +12,7 @@ const sumAll = function (startingNum, endingNum) {
     [startingNum, endingNum] = [endingNum, startingNum];
 
   let sum = 0;
-  for (let n = startingNum; n <= endingNum; n++)
-    sum += n;
+  for (let n = startingNum; n <= endingNum; n++) sum += n;
 
   return sum;
 };
