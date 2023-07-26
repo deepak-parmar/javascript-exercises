@@ -1,11 +1,12 @@
 const removeFromArray = function (inputArray, ...args) {
-  const outputArray = [];
+  return inputArray.filter((e) => !args.includes(e)); // or !(e in args)
 
-  inputArray.forEach(element => {
-    if (!args.includes(element)) outputArray.push(element);
-  });
-
-  return outputArray;
+  // Previous approach
+  // const outputArray = [];
+  // inputArray.forEach(element => {
+  //   if (!args.includes(element)) outputArray.push(element);
+  // });
+  // return outputArray;
 };
 
 // ALTERNATIVE LOOOOONG SOLUTION
