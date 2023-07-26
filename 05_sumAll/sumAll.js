@@ -7,7 +7,7 @@ const sumAll = function (startingNum, endingNum) {
   )
     return "ERROR";
 
-  // swap values of endingNum is smaller than startinNum
+  // swap values if endingNum is smaller than startinNum
   if (endingNum < startingNum)
     [startingNum, endingNum] = [endingNum, startingNum];
 
